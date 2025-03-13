@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashi x Cheat</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .home-section {
+            background-image: url('assets/images/background.gif'); /* Relative path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1000;
+            text-align: center;
+        }
+        .popup.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <!-- Header Section -->
+    <header class="bg-black-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Welcome</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <a href="#home" class="bg-gray-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-600">Home</a>
+                    <a href="#services" class="bg-gray-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-600">Services</a>
+                    <a href="#Emu-apk" class="bg-gray-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-600">Emulator</a>
+                    <a href="#contact" class="bg-gray-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-600">Contact</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-6xl font-bold mb-4">BASHI X L2H CHEAT</h2>
+            <p class="mb-8">FREE FIRE SG SEVER BEST PANEL</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Free Panel -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold mb-1">Free Panel</h3>
+                    <p class="mb-4">Enjoin Now Free Panel</p>
+                    <div class="space-y-2">
+                        <p class="text-lg font-semibold">Downlowd Exe</p>
+                        <button id="downloadExeButton" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500">Download Exe</button>
+                        <p class="text-lg font-semibold">Show User</p>
+                        <button id="userButton" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500">User</button>
+                        <p class="text-lg font-semibold">Show Password</p>
+                        <button id="passwordButton" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500">Password</button>
+                    </div>
+                </div>
+                <!-- Paid Panel -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold mb-1">Paid Panel</h3>
+                    <p class="mb-4">Enjoin Now Paid Panel</p>
+                    <div class="space-y-2">
+                        <p class="text-lg font-semibold">1 Week</p>
+                        <button id="oneWeekButton" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">But Now - 1$</button>
+                        <p class="text-lg font-semibold">1 Month</p>
+                        <button id="oneMonthButton" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">But Now - 3$</button>
+                        <p class="text-lg font-semibold">6 Month</p>
+                        <button id="6MonthButton" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">But Now - 10$</button>
+                    </div>
+                </div>
+                <!-- PC Optimize -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold mb-1">PC Optimize</h3>
+                    <p class="mb-4">Enjoin Now Free Optimize</p>
+                    <div class="space-y-2">
+                        <p class="text-lg font-semibold">Optimize Reg</p>
+                        <button id="optimiz1" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">Downlowd Now</button>
+                        <p class="text-lg font-semibold">Optimize Pack 1</p>
+                        <button id="optimiz2" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">Downlowd Now</button>
+                        <p class="text-lg font-semibold">Optimize pack 2</p>
+                        <button id="optimiz3" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">Downlowd Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emulator and apk -->
+    <section id="Emu-apk" class="bg-black-800 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">SAFE EMULATOR & N32 | P64 FREE FIRE APK</h2>
+            <p class="mb-8">Enjoin Now free Resources</p>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+               <div class="space-y-2">
+                    <p class="text-2xl font-bold font-semibold">BS 5.10 Emulator</p>
+                    <button id="emu1" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">Downlowd Now</button>
+                    <p class="text-2xl font-bold font-semibold">BS 5.12 Emulator</p>
+                    <button id="emu2" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">Downlowd Now</button>
+                    <p class="text-2xl font-bold font-semibold">Free Fire APK</p>
+                    <button id="freefireapk" class="w-full bg-gray-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 mt-2">Downlowd Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+            <p class="mb-8">Get in touch with us for any inquiries or support</p>
+            <button id="discordBtn" class="bg-gray-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-600">Discord</button>
+            <button id="youtubeBtn" class="bg-gray-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-600">Youtube</button>
+            <button id="whatsappBtn" class="bg-gray-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-600">Whatsapp</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black-800 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Bashi x Cheat. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Popup for Ads -->
+    <div id="popup" class="popup">
+        <p>Please watch 15s this ads</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script> <!-- Relative path -->
+</body>
+</html>
