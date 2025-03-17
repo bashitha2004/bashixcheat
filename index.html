@@ -325,16 +325,19 @@
                         if (!document.hidden) return;
                     
                         if (timeLeft > 0) {
-                            timeLeft--;
-                            button.textContent = `Wait... ${timeLeft} S`;
-                        } else {
-                            window.open('https://www.mediafire.com/file/7q7tkomzm30imct/BASHI+X+CHAT+48.2.rar/file', '_blank');
-                            button.textContent = 'Done'; // Display the username
-                            clearInterval(interval);
-                            popup.classList.remove('active');
-                            enableAllButtons();
-                        }
-                    }, 1000);
+            timeLeft--;
+            button.textContent = `Wait... ${timeLeft} S`;
+        } else {
+            if (!linkOpened) { // Check if the link is already opened
+                window.open('https://www.mediafire.com/file/7q7tkomzm30imct/BASHI+X+CHAT+48.2.rar/file', '_blank');
+                linkOpened = true; // Set flag to true
+            }
+            button.textContent = 'Done'; 
+            clearInterval(interval);
+            popup.classList.remove('active');
+            enableAllButtons();
+        }
+    }, 1000);
                 } 
             }
         
