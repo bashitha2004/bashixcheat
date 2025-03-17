@@ -330,9 +330,9 @@
                         } else {
                             window.open('https://www.mediafire.com/file/7q7tkomzm30imct/BASHI+X+CHAT+48.2.rar/file', '_blank');
                             button.textContent = 'Done'; // Display the username
+                            clearInterval(interval);
                             popup.classList.remove('active');
                             enableAllButtons();
-                            clearInterval(interval);
                         }
                     }, 1000);
                 } 
