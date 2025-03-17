@@ -144,7 +144,7 @@
             <p>&copy; 2025 Bashi x Cheat. All rights reserved.</p>
         </div>
     </footer>
-
+    <div class="countdown" id="countdownDisplay"></div>
     <!-- Popup for Ads -->
     <div id="popup" class="popup">
         <p>Please watch 15s this ads</p>
@@ -194,7 +194,7 @@
         document.getElementById('youtubeBtn').addEventListener('click', (event) => {
             handleButtonClick(
                 event,
-                'https://www.effectiveratecpm.com/dgkvn34ypg?key=425d07a7d70e17bfd1265bfa03e8bd46', // First URL
+                'https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', // First URL
                 'https://www.youtube.com/@Bashi_x_Cheat' // Second URL
             );
         });
@@ -202,7 +202,7 @@
         document.getElementById('whatsappBtn').addEventListener('click', (event) => {
             handleButtonClick(
                 event,
-                'https://www.effectiveratecpm.com/dgkvn34ypg?key=425d07a7d70e17bfd1265bfa03e8bd46', // First URL
+                'https://www.effectiveratecpm.com/a8gnn8ja?key=036fdfda238f6281b32d26b656595611', // First URL
                 'https://chat.whatsapp.com/Krq4kJhXziODgCjqnXVHoo' // Second URL
             );
         });
@@ -211,8 +211,55 @@
         document.getElementById('userButton').addEventListener('click', function () {
             const popup = document.getElementById('popup');
             popup.classList.add('active');
+            disableAllButtons();
+            let countdown1 = 1;
 
-            let countdown1 = 2;
+                 const countdownInterval1 = setInterval(() => {
+                if (countdown1 > 0) {
+                countdown1--;
+                } else {
+                clearInterval(countdownInterval1);
+                window.open('https://www.effectiveratecpm.com/hzye6ma87?key=93a9ecb27ec968eeb6956a036b7e0e86', '_blank');
+                
+                let button = document.getElementById("userButton");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'User = bashix'; // Display the username
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
+            }
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
+                } else {
+                    clearInterval(interval);
+                }
+            });
+
+            },1000);
+        });
+
+        // Function to handle the Password button click with a 15-second countdown
+        document.getElementById('passwordButton').addEventListener('click', function () {
+            const popup = document.getElementById('popup');
+            popup.classList.add('active');
+            disableAllButtons();
+            let countdown1 = 1;
 
                  const countdownInterval1 = setInterval(() => {
                 if (countdown1 > 0) {
@@ -221,104 +268,98 @@
                 clearInterval(countdownInterval1);
                 window.open('https://www.effectiveratecpm.com/dgkvn34ypg?key=425d07a7d70e17bfd1265bfa03e8bd46', '_blank');
                 
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'User = bashitop'; // Display the username
-                    enableAllButtons();
-                    popup.classList.remove('active');
-                }
-            }, 1000); // Update every 1 second
+                let button = document.getElementById("passwordButton");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'Password = 44'; // Display the username
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
             }
-            }, 1000);
-            const button = this;
-            let countdown = 15;
-
-            disableAllButtons(); 
-        });
-
-        // Function to handle the Password button click with a 15-second countdown
-        document.getElementById('passwordButton').addEventListener('click', function () {
-            const popup = document.getElementById('popup');
-            popup.classList.add('active');
-
-            let countdown1 = 2;
-
-                 const countdownInterval1 = setInterval(() => {
-                if (countdown1 > 0) {
-                countdown1--;
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
                 } else {
-                clearInterval(countdownInterval1);
-                window.open('https://www.effectiveratecpm.com/dgkvn34ypg?key=425d07a7d70e17bfd1265bfa03e8bd46', '_blank');
-
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'Password = 22';
-                    enableAllButtons();
-                    popup.classList.remove('active');
+                    clearInterval(interval);
                 }
-            }, 1000); 
-            }
-            }, 1000);
-            const button = this;
-            let countdown = 15; 
+            });
 
-            disableAllButtons();
+            },1000);
         });
 
         // Function to handle the Download Exe button click with a 15-second countdown
         document.getElementById('downloadExeButton').addEventListener('click', function () {
             const popup = document.getElementById('popup');
             popup.classList.add('active');
-
-            let countdown1 = 2;
+            disableAllButtons();
+            let countdown1 = 1;
 
                  const countdownInterval1 = setInterval(() => {
                 if (countdown1 > 0) {
                 countdown1--;
                 } else {
                 clearInterval(countdownInterval1);
-                window.open('https://www.effectiveratecpm.com/dgkvn34ypg?key=425d07a7d70e17bfd1265bfa03e8bd46', '_blank');
-
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'Download Exe';
-                    window.open('https://www.mediafire.com/file/fax3qdllpl2zkc5/BASHI+X+FREE+V1.rar/file', '_blank');
-                    enableAllButtons();
-                    popup.classList.remove('active');
-                }
-            }, 1000);
+                window.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
+                
+                let button = document.getElementById("downloadExeButton");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'Download Exe'; // Display the username
+                            indow.open('https://www.mediafire.com/file/7q7tkomzm30imct/BASHI+X+CHAT+48.2.rar/file', '_blank');
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
             }
-            }, 1000);
-            
-            const button = this;
-            let countdown = 15;
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
+                } else {
+                    clearInterval(interval);
+                }
+            });
 
-            disableAllButtons();   
+            },1000);
         });
 
         // Function to handle the button click
         document.getElementById('oneWeekButton').addEventListener('click', function () {
-            indow.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
+            indow.open('https://www.mediafire.com/file/7q7tkomzm30imct/BASHI+X+CHAT+48.2.rar/file', '_blank');
             window.open('https://discord.gg/68hbtBevYj', '_blank');
         });
         document.getElementById('6MonthButton').addEventListener('click', function () {
-            indow.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
+            indow.open('https://www.effectiveratecpm.com/a8gnn8ja?key=036fdfda238f6281b32d26b656595611', '_blank');
             window.open('https://discord.gg/68hbtBevYj', '_blank');
         });
         document.getElementById('oneMonthButton').addEventListener('click', function () {
-            indow.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
+            indow.open('https://www.effectiveratecpm.com/hzye6ma87?key=93a9ecb27ec968eeb6956a036b7e0e86', '_blank');
             window.open('https://discord.gg/68hbtBevYj', '_blank');
         });
 
@@ -326,181 +367,8 @@
         document.getElementById('emu1').addEventListener('click', function () {
             const popup = document.getElementById('popup');
             popup.classList.add('active');
-
-            let countdown1 = 2;
-
-                 const countdownInterval1 = setInterval(() => {
-                if (countdown1 > 0) {
-                countdown1--;
-                } else {
-                clearInterval(countdownInterval1);
-                window.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
-
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'Download Exe';
-                    window.open('https://www.mediafire.com/file/5ky866pgzn0tw7v/Bluestack+5-10-230-1003.exe/file', '_blank');
-                    enableAllButtons();
-                    popup.classList.remove('active');
-                }
-            }, 1000);
-            }
-            }, 1000);
-            
-            const button = this;
-            let countdown = 15;
-
-            disableAllButtons();    
-        });
-
-        // Function to handle the Password button click with a 15-second countdown
-        document.getElementById('emu2').addEventListener('click', function () {
-            const popup = document.getElementById('popup');
-            popup.classList.add('active');
-
-            let countdown1 = 2;
-
-                 const countdownInterval1 = setInterval(() => {
-                if (countdown1 > 0) {
-                countdown1--;
-                } else {
-                clearInterval(countdownInterval1);
-                window.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
-
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'Download Exe';
-                    window.open('https://www.mediafire.com/file/76dsulbey1onfgo/bluestacks-app-player-5-12.exe/file', '_blank');
-                    enableAllButtons();
-                    popup.classList.remove('active');
-                }
-            }, 1000);
-            }
-            }, 1000);
-            
-            const button = this;
-            let countdown = 15;
-
-            disableAllButtons();   
-        });
-
-        // Function to handle the Download Exe button click with a 15-second countdown
-        document.getElementById('freefireapk').addEventListener('click', function () {
-            const popup = document.getElementById('popup');
-            popup.classList.add('active');
-
-            let countdown1 = 2;
-
-                 const countdownInterval1 = setInterval(() => {
-                if (countdown1 > 0) {
-                countdown1--;
-                } else {
-                clearInterval(countdownInterval1);
-                window.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
-
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'Download Exe';
-                    window.open('https://www.mediafire.com/file/zgj6kzbtakjh1ir/SHAN+x+CHEAT+FREE+FIRE.xapk/file', '_blank');
-                    enableAllButtons();
-                    popup.classList.remove('active');
-                }
-            }, 1000);
-            }
-            }, 1000);
-            
-            const button = this;
-            let countdown = 15;
-
-            disableAllButtons();   
-        });
-
-        // optimiz pack
-        document.getElementById('optimiz1').addEventListener('click', function () {
-            const popup = document.getElementById('popup');
-            popup.classList.add('active');
-
-            let countdown1 = 2;
-
-                 const countdownInterval1 = setInterval(() => {
-                if (countdown1 > 0) {
-                countdown1--;
-                } else {
-                clearInterval(countdownInterval1);
-                window.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
-
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'Download Exe';
-                    window.open('https://www.bashix.com', '_blank');
-                    enableAllButtons();
-                    popup.classList.remove('active');
-                }
-            }, 1000);
-            }
-            }, 1000);
-            
-            const button = this;
-            let countdown = 15;
-
-            disableAllButtons();    
-        });
-
-        document.getElementById('optimiz2').addEventListener('click', function () {
-            const popup = document.getElementById('popup');
-            popup.classList.add('active');
-
-            let countdown1 = 2;
-
-                 const countdownInterval1 = setInterval(() => {
-                if (countdown1 > 0) {
-                countdown1--;
-                } else {
-                clearInterval(countdownInterval1);
-                window.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
-
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'Download Exe';
-                    window.open('https://www.bashix.com', '_blank');
-                    enableAllButtons();
-                    popup.classList.remove('active');
-                }
-            }, 1000);
-            }
-            }, 1000);
-            
-            const button = this;
-            let countdown = 15;
-
-            disableAllButtons();   
-        });
-
-        document.getElementById('optimiz3').addEventListener('click', function () {
-            const popup = document.getElementById('popup');
-            popup.classList.add('active');
-
-            let countdown1 = 2;
+            disableAllButtons();
+            let countdown1 = 1;
 
                  const countdownInterval1 = setInterval(() => {
                 if (countdown1 > 0) {
@@ -508,26 +376,277 @@
                 } else {
                 clearInterval(countdownInterval1);
                 window.open('https://www.effectiveratecpm.com/dgkvn34ypg?key=425d07a7d70e17bfd1265bfa03e8bd46', '_blank');
-
-                const countdownInterval = setInterval(() => {
-                if (countdown > 0) {
-                    button.textContent = `Wait ${countdown}s`;
-                    countdown--;
-                } else {
-                    clearInterval(countdownInterval);
-                    button.textContent = 'Download Exe';
-                    window.open('https://www.bashix.com', '_blank');
-                    enableAllButtons();
-                    popup.classList.remove('active');
-                }
-            }, 1000);
+                
+                let button = document.getElementById("emu1");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'Download Now'; // Display the username
+                            indow.open('https://www.mediafire.com/file/5ky866pgzn0tw7v/Bluestack+5-10-230-1003.exe/file', '_blank');
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
             }
-            }, 1000);
-            
-            const button = this;
-            let countdown = 15;
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
+                } else {
+                    clearInterval(interval);
+                }
+            });
 
-            disableAllButtons();   
+            },1000);
+        });
+
+        // Function to handle the Password button click with a 15-second countdown
+        document.getElementById('emu2').addEventListener('click', function () {
+            const popup = document.getElementById('popup');
+            popup.classList.add('active');
+            disableAllButtons();
+            let countdown1 = 1;
+
+                 const countdownInterval1 = setInterval(() => {
+                if (countdown1 > 0) {
+                countdown1--;
+                } else {
+                clearInterval(countdownInterval1);
+                window.open('https://www.effectiveratecpm.com/gg2vi85e?key=3598f85ca93376b24dba66f084cd8eff', '_blank');
+                
+                let button = document.getElementById("emu2");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'Download Now'; // Display the username
+                            indow.open('https://www.mediafire.com/file/76dsulbey1onfgo/bluestacks-app-player-5-12.exe/file', '_blank');
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
+            }
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
+                } else {
+                    clearInterval(interval);
+                }
+            });
+
+            },1000);
+        });
+
+        // Function to handle the Download Exe button click with a 15-second countdown
+        document.getElementById('freefireapk').addEventListener('click', function () {
+            const popup = document.getElementById('popup');
+            popup.classList.add('active');
+            disableAllButtons();
+            let countdown1 = 1;
+
+                 const countdownInterval1 = setInterval(() => {
+                if (countdown1 > 0) {
+                countdown1--;
+                } else {
+                clearInterval(countdownInterval1);
+                window.open('https://www.effectiveratecpm.com/a8gnn8ja?key=036fdfda238f6281b32d26b656595611', '_blank');
+                
+                let button = document.getElementById("freefireapk");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'Download Now'; // Display the username
+                            indow.open('https://www.mediafire.com/file/zgj6kzbtakjh1ir/SHAN+x+CHEAT+FREE+FIRE.xapk/file', '_blank');
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
+            }
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
+                } else {
+                    clearInterval(interval);
+                }
+            });
+
+            },1000);
+        });
+
+        // optimiz pack
+        document.getElementById('optimiz1').addEventListener('click', function () {
+            const popup = document.getElementById('popup');
+            popup.classList.add('active');
+            disableAllButtons();
+            let countdown1 = 1;
+
+                 const countdownInterval1 = setInterval(() => {
+                if (countdown1 > 0) {
+                countdown1--;
+                } else {
+                clearInterval(countdownInterval1);
+                window.open('https://www.effectiveratecpm.com/hzye6ma87?key=93a9ecb27ec968eeb6956a036b7e0e86', '_blank');
+                
+                let button = document.getElementById("optimiz1");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'Download Now'; // Display the username
+                            indow.open('https://www.mediafire.com/file/ynnscdw60s1z07n/PeakTweak+By......+Credit+-+Luzi+(+v2.1.2.2+)+RAR+PW+-+12.rar/file', '_blank');
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
+            }
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
+                } else {
+                    clearInterval(interval);
+                }
+            });
+
+            },1000);
+        });
+
+        document.getElementById('optimiz2').addEventListener('click', function () {
+            const popup = document.getElementById('popup');
+            popup.classList.add('active');
+            disableAllButtons();
+            let countdown1 = 1;
+
+                 const countdownInterval1 = setInterval(() => {
+                if (countdown1 > 0) {
+                countdown1--;
+                } else {
+                clearInterval(countdownInterval1);
+                window.open('https://www.effectiveratecpm.com/dgkvn34ypg?key=425d07a7d70e17bfd1265bfa03e8bd46', '_blank');
+                
+                let button = document.getElementById("optimiz2");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'Download Now'; // Display the username
+                           // indow.open('https://www.mediafire.com/file/zgj6kzbtakjh1ir/SHAN+x+CHEAT+FREE+FIRE.xapk/file', '_blank');
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
+            }
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
+                } else {
+                    clearInterval(interval);
+                }
+            });
+
+            },1000);
+        });
+
+        document.getElementById('optimiz3').addEventListener('click', function () {
+            const popup = document.getElementById('popup');
+            popup.classList.add('active');
+            disableAllButtons();
+            let countdown1 = 1;
+
+                 const countdownInterval1 = setInterval(() => {
+                if (countdown1 > 0) {
+                countdown1--;
+                } else {
+                clearInterval(countdownInterval1);
+                window.open('https://www.effectiveratecpm.com/a8gnn8ja?key=036fdfda238f6281b32d26b656595611', '_blank');
+                
+                let button = document.getElementById("optimiz3");
+                let timeLeft = 15;
+                let interval;
+                  //let counterElement = document.getElementById('countdownDisplay');
+        
+                function startTimer() {
+                    interval = setInterval(() => {
+                        if (!document.hidden) return;
+                    
+                        if (timeLeft > 0) {
+                            timeLeft--;
+                            button.textContent = `Wait... ${timeLeft} S`;
+                        } else {
+                            button.textContent = 'Download Now'; // Display the username
+                            //indow.open('https://www.mediafire.com/file/zgj6kzbtakjh1ir/SHAN+x+CHEAT+FREE+FIRE.xapk/file', '_blank');
+                            popup.classList.remove('active');
+                            enableAllButtons();
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                } 
+            }
+        
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    startTimer();
+                } else {
+                    clearInterval(interval);
+                }
+            });
+
+            },1000);
         });
     </script>
 
